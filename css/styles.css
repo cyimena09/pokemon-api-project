@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* General*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;;
+}
+
+body {
+    background-color: #f3f6f5;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-page {
+    width: 1000px;
+    margin-top: 70px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+#error-message {
+    color: red;
+}
+
+#success-message {
+    color: green;
+}
+
+#error-message, #success-message {
+    transition: 0.5s;
+}
+
+/* Header*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(11, 54, 102);
+}
+
+.brand {
+    font-size: 40px;
+    width: 1000px;
+    color: #e6d551;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 3px 5px #e3e3f1;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    padding: 10px;
+    list-style: none;
+}
+
+header li:hover {
+    border-bottom: 2px solid #1b4884;
+}
+
+a {
+    text-decoration: none;
+    color: #1b4884;
+}
+
+header li {
+    margin-right: 30px;
+}
+
+/* Search pokemon page */
+
+/* Container input and search button */
+.input-btn-container {
+    display: flex;
+    border: solid 1px rgb(192, 218, 233);
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+/* Search result */
+
+/* Container infos pokemon */
+#result, .wrapper {
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 15px #e3e3f1;
+    margin-bottom: 30px;
+}
+
+#result {
+    display: none;
+}
+
+.image-infos {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.wrapper-image {
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+    margin-left: 40px;
+}
+
+.infos {
+    display: flex;
+}
+
+.info {
+    width: 150px;
+    margin-right: 20px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+/* Form */
+
+input {
+    outline: none;
+    border: none;
+    padding: 0 15px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Button */
+
+button {
+    border: none;
+}
+
+button i {
+    font-size: 18px;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(11, 54, 102);
+    color: white;
+}
+
+.btn-container:hover {
+    background-color: #1b4884;
+}
+
+.search .btn-container {
+    width: 100px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.delete {
+    background-color: #be0404;
+    width: 150px;
+}
+
+.delete:hover {
+    background-color: #d60909;
+}
